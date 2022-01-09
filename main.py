@@ -30,7 +30,7 @@ def getMessage():
 @server.route("/")
 def webhook():
     bot.remove_webhook()
-    bot.set_webhook(url='https://github.com/zhenerBY/zhener-bot-webhook' + TOKEN)
+    bot.set_webhook(url='https://zhener-bot-webhook.herokuapp.com/' + TOKEN)
     return "!", 200
 
 
